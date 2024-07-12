@@ -7,7 +7,7 @@
 #' @return \code{ds.abs} Prints current memory used
 #' @author Tim Cadman
 #' @export
-ds.memUsed <- function(x=NULL, newobj=NULL, datasources=NULL){
+ds.memUsed <- function(datasources=NULL){
 
   if(is.null(datasources)){
     datasources <- datashield.connections_find()
